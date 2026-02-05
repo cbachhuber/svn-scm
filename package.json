@@ -239,6 +239,11 @@
                 "category": "SVN"
             },
             {
+                "command": "svn.lock",
+                "title": "Get lock for current file",
+                "category": "SVN"
+            },
+            {
                 "command": "svn.merge",
                 "title": "Merge",
                 "category": "SVN"
@@ -516,6 +521,10 @@
                 },
                 {
                     "command": "svn.log",
+                    "when": "config.svn.enabled && svnOpenRepositoryCount != 0"
+                },
+                {
+                    "command": "svn.lock",
                     "when": "config.svn.enabled && svnOpenRepositoryCount != 0"
                 },
                 {
